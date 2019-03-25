@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+
+    <title>Gra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="select">
+
+        <img data-option="papier" class="first" src="paper.png" alt="Papier" title="Papier">
+
+        <img data-option="kamień" src="rock.png" alt="Kamień" title="Kamień">
+
+        <img data-option="nożyczki" src="scissors.png" alt="Nożyczki" title="Nożyczki">
+
+    </div>
+
+    <button class="start">Gramy!</button>
+
+    <div class="panel-left">
+        <h3>Wyniki gry</h3>
+        <p>Twój wybór: <span data-summary="your-choice"></span></p>
+        <p>Wybór komputera: <span data-summary="ai-choice"></span></p>
+        <h2>Zwycięzca gry: <span data-summary="who-win"></span></h2>
+    </div>
+
+    <div class="panel-right">
+        <h3>Aktualne wyniki</h3>
+        <p class="numbers">liczba gier: <span>0</span></p>
+        <p class="wins">wygranych: <span>0</span></p>
+        <p class="losses">przegranych: <span>0</span></p>
+        <p class="draws">remisów: <span>0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
